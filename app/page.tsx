@@ -1,5 +1,5 @@
 import Player from '@/componenets/lotties/animation'
-import Search from '@/componenets/ui/Search';
+import TempSearch from '@/componenets/ui/TempSearch';
 
 export default function Home() {
   return (
@@ -11,7 +11,8 @@ export default function Home() {
         <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
-      <Search placeholder='Search...'/>
+      {/* <Search placeholder='Search...'/> */}
+      <TempSearch/>
     </main>
   );
 }
