@@ -1,33 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "sora", sans-serif; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    /* font-family: "Sora", system-ui, sans-serif; */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Change size of icon inputs */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: large
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  font-size: large
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* START: General styles */
+
+.flex-center {
+  @apply flex items-center justify-center;
 }
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row justify-center items-center px-4 py-2 outline-none text-xl text-center font-normal whitespace-nowrap rounded-lg w-full md:w-fit cursor-pointer;
+}
+.blue-btn {
+  @apply  bg-blue-700 px-4 py-3 rounded-lg justify-center items-center gap-1 inline-flex text-white text-sm font-bold leading-tight whitespace-nowrap w-fit cursor-pointer;
+}
+
+/* Reporter variants */
+/* .container{
+  @apply bg-white rounded-2xl border border-zinc-100 p-6 flex flex-col justify-between gap-6
+} */
+
+.form-container{
+  @apply bg-white rounded-2xl p-6 flex flex-col justify-between max-h-full gap-6 border border-zinc-100 mt-6
+}
+
+.form-header{
+  @apply text-neutral-800 text-lg font-extrabold leading-normal
+}
+
+/* .input-label{
+  @apply text-neutral-800 text-[11px] font-normal leading-[18px]
+} */
+.input-label{
+  @apply self-stretch text-neutral-800 text-xs font-bold leading-5
+}
+
+.input-field{
+  @apply px-4 py-2.5 bg-white rounded-lg border border-neutral-200 justify-start items-center gap-2.5 inline-flex grow shrink basis-0 text-stone-500 text-xs font-normal leading-[18px] invalid:border-red-500 invalid:bg-red-50 disabled:cursor-not-allowed
+}
+
+
+/* Button variants */
+.orange-btn{
+  @apply bg-orange-200 hover:bg-orange-300 text-gray-800
+}
+
+.gray-btn{
+  @apply bg-gray-700 hover:bg-gray-800 text-slate-100
+}
+
+.slate-btn{
+  @apply bg-slate-300 hover:bg-slate-400 text-cyan-900
+}
+
+.cyan-btn{
+  @apply bg-cyan-900 hover:bg-cyan-950 text-slate-300
+}
+/* END: General styles */
