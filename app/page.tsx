@@ -1,4 +1,4 @@
-import Player from '@/components/lotties/animation'
+import Player from '@/componenets/lotties/animation'
 // import Search from '@/componenets/search-input/search'
 
 
