@@ -1,5 +1,5 @@
 import Player from '@/componenets/lotties/animation'
-import Search from '@/componenets/search-input/search'
+import Search from '@/componenets/search-input/Search'
 
 
 export default function Home() {
