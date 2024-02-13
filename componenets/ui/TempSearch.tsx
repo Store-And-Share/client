@@ -1,17 +1,20 @@
 'use client'
 
-type Props = {}
+type Props = {
+    placeholder: string
+}
 
-function TempSearch({}: Props) {
+function TempSearch({ placeholder }: Props) {
   return (
-    <div>
-        <label className="input-label">City</label>
+    <div className="grid p-24">
+      {/* <label className="input-label">Search Your Item/Tool</label>     */}
       <input
-        required
+        // required
         type="text"
         // defaultValue=
         onChange={(e) => console.log(e.target.value)}
         className="input-field"
+        placeholder={placeholder}
       />
     </div>
   )

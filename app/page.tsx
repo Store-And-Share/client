@@ -12,7 +12,7 @@ export default function Home() {
         </p>
       </div>
       {/* <Search placeholder='Search...'/> */}
-      <TempSearch/>
+      <TempSearch placeholder='Search ...'/>
     </main>
   );
 }
