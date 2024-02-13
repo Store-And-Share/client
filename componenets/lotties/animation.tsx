@@ -10,8 +10,9 @@ const LottiePlayerComponent = () => {
     <Player
     autoplay
     loop
+    src="https://lottie.host/9b278f1f-5238-43d5-9355-789d3f4674ab/2xXu29YWKS.json"
     // src="https://lottie.host/c525e7e9-a0b7-40a2-b62e-e8da90658590/tALaXZnnNg.json"
-    src="https://lottie.host/6be1d614-e220-42a1-8d00-1954f8ab2342/xD7bXr1Mmt.json"
+    // src="https://lottie.host/6be1d614-e220-42a1-8d00-1954f8ab2342/xD7bXr1Mmt.json"
     // src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
     style={{ height: '200px', width: '300px' }}
   >
