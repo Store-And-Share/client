@@ -1,5 +1,6 @@
+import Player from '@/components/lotties/animation'
+// import Search from '@/componenets/search-input/search'
 
-import Search from '@/componenets/search-input/search'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className='flex items-center justify-start pr-24'>
         <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+        <Player/>
       </div>
       {/* <Search placeholder='Search Your Items'/> */}
     </main>
